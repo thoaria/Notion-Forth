@@ -1,0 +1,309 @@
+{
+  "object": "page",
+  "id": "14ac93c4-e9b8-80a0-ad6e-e791b269f41f",
+  "created_time": "2024-11-26T10:13:00.000Z",
+  "last_edited_time": "2025-01-10T03:11:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "71350d6a-3b3b-4b99-bf0d-8fa26bbc2c95"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "71350d6a-3b3b-4b99-bf0d-8fa26bbc2c95"
+  },
+  "cover": null,
+  "icon": null,
+  "parent": {
+    "type": "database_id",
+    "database_id": "149c93c4-e9b8-8083-974c-fa5b6b25ba1e"
+  },
+  "archived": false,
+  "in_trash": false,
+  "properties": {
+    "game trophies": {
+      "id": "AulE",
+      "type": "relation",
+      "relation": [
+        {
+          "id": "14ac93c4-e9b8-8020-a4f1-e87dd63915f0"
+        },
+        {
+          "id": "14ac93c4-e9b8-8063-8b1b-ec53fdb64b90"
+        },
+        {
+          "id": "14ac93c4-e9b8-8030-89be-d685ba5bddac"
+        },
+        {
+          "id": "14ac93c4-e9b8-80bc-b3c9-e14db9aa95d1"
+        },
+        {
+          "id": "14ac93c4-e9b8-802f-b4d4-e66c31b2161b"
+        },
+        {
+          "id": "14ac93c4-e9b8-8040-921b-f0f7a504d33e"
+        },
+        {
+          "id": "14ac93c4-e9b8-8026-af33-e52423ab947d"
+        },
+        {
+          "id": "14ac93c4-e9b8-80c6-aa3a-fe6244f36d46"
+        },
+        {
+          "id": "14ac93c4-e9b8-801c-bcb8-c7ab56c36d1d"
+        },
+        {
+          "id": "14ac93c4-e9b8-807f-93c8-c13327d9ae25"
+        },
+        {
+          "id": "14ac93c4-e9b8-803b-b6c2-ef59ea956e72"
+        },
+        {
+          "id": "14ac93c4-e9b8-80b5-9f24-f1454515b331"
+        },
+        {
+          "id": "14ac93c4-e9b8-8030-9ae2-dfffbb5a3b3b"
+        },
+        {
+          "id": "14ac93c4-e9b8-80cb-8051-e09cc205be52"
+        },
+        {
+          "id": "14ac93c4-e9b8-80c3-96ac-ef9922063a23"
+        },
+        {
+          "id": "14ac93c4-e9b8-8048-aeb7-f1f84d990ed9"
+        },
+        {
+          "id": "14ac93c4-e9b8-80f2-bba2-cb1784652d09"
+        },
+        {
+          "id": "14ac93c4-e9b8-8070-bdcf-c7b3ae415cd7"
+        },
+        {
+          "id": "14ac93c4-e9b8-80a0-81dc-d31e43fff610"
+        },
+        {
+          "id": "14ac93c4-e9b8-8085-b4c2-d49dad125de1"
+        },
+        {
+          "id": "14ac93c4-e9b8-8043-a321-de9e1c9eca03"
+        },
+        {
+          "id": "14ac93c4-e9b8-80aa-97db-da366621c040"
+        },
+        {
+          "id": "14ac93c4-e9b8-8038-8f6e-e78528eb07ba"
+        },
+        {
+          "id": "14ac93c4-e9b8-8012-8a91-dfcbb8d0d7a7"
+        },
+        {
+          "id": "14ac93c4-e9b8-803b-83ff-f02951ebe406"
+        }
+      ],
+      "has_more": true
+    },
+    "timestamp": {
+      "id": "IHCH",
+      "type": "formula",
+      "formula": {
+        "type": "date",
+        "date": {
+          "start": "2024-01-21T16:25:00.000-05:00",
+          "end": null,
+          "time_zone": null
+        }
+      }
+    },
+    "genre": {
+      "id": "JWUR",
+      "type": "multi_select",
+      "multi_select": [
+        {
+          "id": "08aefc64-0236-487b-8fd4-887d52b260a8",
+          "name": "fantasy",
+          "color": "default"
+        },
+        {
+          "id": "371ea794-8570-407b-95d7-988094cd7eeb",
+          "name": "rpg",
+          "color": "green"
+        }
+      ]
+    },
+    "tags": {
+      "id": "MDCJ",
+      "type": "multi_select",
+      "multi_select": [
+        {
+          "id": "<Bpw",
+          "name": "♥︎",
+          "color": "pink"
+        },
+        {
+          "id": "h{HN",
+          "name": "★★★★★",
+          "color": "yellow"
+        }
+      ]
+    },
+    "progress": {
+      "id": "UdPK",
+      "type": "status",
+      "status": {
+        "id": "1f5d6d64-90f9-443f-a8ea-4e756d5921e8",
+        "name": "💯 complete",
+        "color": "green"
+      }
+    },
+    "database id": {
+      "id": "U~TV",
+      "type": "formula",
+      "formula": {
+        "type": "string",
+        "string": "14ac93c4e9b880a0ad6ee791b269f41f"
+      }
+    },
+    "cover": {
+      "id": "Vg_R",
+      "type": "files",
+      "files": [
+        {
+          "name": "https://www.godisageek.com/wp-content/uploads/FF7R-Thumb-1.jpg",
+          "type": "external",
+          "external": {
+            "url": "https://www.godisageek.com/wp-content/uploads/FF7R-Thumb-1.jpg"
+          }
+        }
+      ]
+    },
+    "developer": {
+      "id": "W%5Ep%3D",
+      "type": "multi_select",
+      "multi_select": [
+        {
+          "id": "@KSA",
+          "name": "square enix",
+          "color": "brown"
+        }
+      ]
+    },
+    "franchise": {
+      "id": "Zysm",
+      "type": "multi_select",
+      "multi_select": [
+        {
+          "id": "1ae3d249-7d7a-4c8f-a737-8ef07d71dce2",
+          "name": "final fantasy",
+          "color": "purple"
+        }
+      ]
+    },
+    "finished": {
+      "id": "%5B_Fj",
+      "type": "date",
+      "date": {
+        "start": "2021-12-25T12:25:00.000-05:00",
+        "end": null,
+        "time_zone": null
+      }
+    },
+    "platform": {
+      "id": "cjU%5D",
+      "type": "multi_select",
+      "multi_select": [
+        {
+          "id": "[sKo",
+          "name": "ps4",
+          "color": "blue"
+        },
+        {
+          "id": "op~k",
+          "name": "ps5",
+          "color": "blue"
+        }
+      ]
+    },
+    "year to date": {
+      "id": "d%5Dy~",
+      "type": "relation",
+      "relation": [
+        {
+          "id": "175c93c4-e9b8-80f0-85cd-d261d27003c0"
+        },
+        {
+          "id": "14ac93c4-e9b8-8008-a12d-d0d03261fcff"
+        }
+      ],
+      "has_more": false
+    },
+    "games per year": {
+      "id": "fb%3DS",
+      "type": "relation",
+      "relation": [
+        {
+          "id": "14ac93c4-e9b8-8074-b384-e075390daeb0"
+        }
+      ],
+      "has_more": false
+    },
+    "hours": {
+      "id": "sANz",
+      "type": "number",
+      "number": 101
+    },
+    "completed": {
+      "id": "uaNu",
+      "type": "date",
+      "date": {
+        "start": "2024-01-21T16:25:00.000-05:00",
+        "end": null,
+        "time_zone": null
+      }
+    },
+    "language": {
+      "id": "%7BAax",
+      "type": "multi_select",
+      "multi_select": [
+        {
+          "id": "JXwd",
+          "name": "english",
+          "color": "yellow"
+        }
+      ]
+    },
+    "%": {
+      "id": "%7Dnvj",
+      "type": "formula",
+      "formula": {
+        "type": "number",
+        "number": 1
+      }
+    },
+    "name": {
+      "id": "title",
+      "type": "title",
+      "title": [
+        {
+          "type": "text",
+          "text": {
+            "content": "▊ ▍▏final fantasy vii remake",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "▊ ▍▏final fantasy vii remake",
+          "href": null
+        }
+      ]
+    }
+  },
+  "url": "https://www.notion.so/final-fantasy-vii-remake-14ac93c4e9b880a0ad6ee791b269f41f",
+  "public_url": "https://arisdomain.notion.site/final-fantasy-vii-remake-14ac93c4e9b880a0ad6ee791b269f41f",
+  "request_id": "a4619539-5e47-458b-8e10-f71758bf5a13"
+}
