@@ -72,6 +72,7 @@ variable tags
 : ADD-GENRE ( -- )
     ADD ;
 
+\ will prompt user for name and genre currently
 : CONSTRUCT-COMMAND ( -- ) ADD-NAME CR ADD-GENRE CR FETCH-COMMAND ;
 \ ADD-PLATFORM ADD-COVER ADD-FRANCHISE ADD-DEV ADD-LANG ADD-TAGS ;
 
@@ -91,4 +92,5 @@ variable tags
 
 INITIALIZE-BUFFER
 PRINT-COMMAND
+." add game (hit enter to submit each value; type isn't working right now): " CR CR
 ADD-GAME
