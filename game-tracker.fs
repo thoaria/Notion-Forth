@@ -1,4 +1,4 @@
-variable command-buffer 256 cells allot
+variable command-buffer 256 CELLS ALLOT
 variable command-buffer-ptr
 \ s" node request.js" .s command-buffer-ptr ! command-buffer !
 
@@ -22,13 +22,17 @@ variable tags
 \ count out length when using user input? then store length, use to access variable later?
 \ spaces will need to be added in
 
+: ARGUMENT ( char # -- addr ) CELLS command-buffer + ;
+
 : FETCH-COMMAND ( -- ) command-buffer command-buffer-ptr @ ;
 
-: PRINT-COMMAND ( -- ) command-buffer command-buffer-ptr @ type ;
+: PRINT-COMMAND ( -- ) CR CR command-buffer command-buffer-ptr @ type ;
 
 : SHOW-INPUT ( -- ) command-buffer command-buffer-ptr @ + 1 type ;
 
-: APPEND-BUFFER ( u -- ) command-buffer command-buffer-ptr @ + ! ;
+: APPEND-BUFFER ( u -- ) command-buffer-ptr @ ARGUMENT ! ;
+
+\ : APPEND-BUFFER ( u -- ) command-buffer command-buffer-ptr @ + ! ;
 
 : MOVE-PTR ( u -- ) command-buffer-ptr @ + command-buffer-ptr ! ;
 
@@ -49,8 +53,15 @@ variable tags
     ADD-QUOTE
     1 MOVE-PTR
     begin
-        key dup dup 
+        key dup dup
+        \ ." before store"
+        \ CR
+        \ .s
         STORE
+        \ ." after store"
+        \ CR
+        \ .s
+        \ CR
         1 MOVE-PTR
         13 = 
     until drop ADD-QUOTE PRINT-COMMAND ;
@@ -66,7 +77,7 @@ variable tags
 
 \ name genre platform cover franchise developer language tags: F for favorite, 1-5 for rating;
 : ADD-GAME ( u1 u2 u3 u4 u5 -- ) 
-    CONSTRUCT-COMMAND system ;
+    CONSTRUCT-COMMAND PRINT-COMMAND ;
 
 : RETRIEVE-TEMPLATE ( -- ) 
 \ retrieves a page and prints to an outfile; needed to set template for JSON object later
@@ -76,7 +87,7 @@ variable tags
  : INITIALIZE-BUFFER ( -- ) 
     \ 110 111 100 101 32 114 101 113 117 101 115 116 46 106 115
     115 106 46 116 115 101 117 113 101 114 32 101 100 111 110
-    15 0 DO APPEND-BUFFER 1 MOVE-PTR LOOP ;
+    15 0 DO APPEND-BUFFER 1 MOVE-PTR CR .s LOOP ;
 
 INITIALIZE-BUFFER
 PRINT-COMMAND
